@@ -1,0 +1,10 @@
+[package]
+name = "ray_playground"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+r_ray = { git = "https://github.com/elapuestojoe/r_ray", branch = "main" }
+r_vector = { git = "https://github.com/elapuestojoe/r_vector", branch = "main" }
