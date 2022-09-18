@@ -48,7 +48,7 @@ mod randutil {
 fn ray_color(ray: &Ray<f32>, world: &HittableList<f32>) -> Vector<f32> {
     let mut hit_record = HitRecord::<f32>::new();
 
-    if world.hit(&ray, 0.0, f32::MAX, &mut hit_record) {
+    if world.hit(&ray, 0.001, f32::MAX, &mut hit_record) {
         let target =
             &hit_record.point_at_t + &hit_record.normal + &randutil::random_in_unit_sphere();
         return ray_color(
