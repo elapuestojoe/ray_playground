@@ -92,6 +92,7 @@ fn main() {
                 color += ray_color(&ray, &world);
             }
             color /= ns as f32;
+            color = Vector::new(color.r().sqrt(), color.g().sqrt(), color.b().sqrt());
             let ir = (255.99 * color.r()) as i32;
             let ig = (255.99 * color.g()) as i32;
             let ib = (255.99 * color.b()) as i32;
