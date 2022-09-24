@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 r_ray = { git = "https://github.com/elapuestojoe/r_ray", branch = "main" }
 r_vector = { git = "https://github.com/elapuestojoe/r_vector", branch = "main" }
-rand = "0.7.3"
+r_float = { git = "https://github.com/elapuestojoe/r_float", branch = "main" }
