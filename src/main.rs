@@ -49,12 +49,12 @@ fn main() {
     let sphere_3 = Sphere::new(
         Vector::new(1f32, 0f32, -1.2f32),
         0.5,
-        materials_impl::Metal::new(Vector::new(0.8, 0.6, 0.2)),
+        materials_impl::Metal::new(Vector::new(0.8, 0.6, 0.2), 0.3),
     );
     let sphere_4 = Sphere::new(
         Vector::new(-1f32, 0f32, -1f32),
         0.5,
-        materials_impl::Metal::new(Vector::new(0.8, 0.8, 0.8)),
+        materials_impl::Metal::new(Vector::new(0.8, 0.8, 0.8), 0.8),
     );
     let mut world = HittableList::new(vec![
         Box::new(sphere_1),
